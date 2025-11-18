@@ -1,27 +1,37 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Document</title>
-        <link rel="stylesheet" href="src/style/output.css">
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            primary: '#4681A6',
-                            secondary: '#F29B88',
-                            neutral: '#D9D9D9',
-                            dark: '#404040',
-                            darkest: '#0D0D0D'
-                        }
-                    }
-                }
-            }
-        </script>
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucas | Portfolio</title>
+    <link rel="stylesheet" href="src/style/output.css">
+</head>
+<body>
+    <nav class="backdrop-blur-sm fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold">&lt;LW /&gt;</div>
 
-    </body>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-neutral transition duration-300">Início</a>
+                    <a href="#projetos" class="text-neutral transition duration-300">Projetos</a>
+                    <a href="#contato" class="text-neutral transition duration-300">Contato</a>
+                </div>
+
+                <button id="menuBtn" class="md:hidden text-neutral">
+                    <svg class="w-6 h-6" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="#inicio" class="block py-2 text-neutral transition duration-300">Início</a>
+                <a href="#projetos" class="block py-2 text-neutral transition duration-300">Projetos</a>
+                <a href="#contato" class="block py-2 text-neutral transition duration-300">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
 </html>
